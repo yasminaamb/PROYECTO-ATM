@@ -1,0 +1,258 @@
+/*Fuentes de texto*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Raleway:wght@300&display=swap');
+
+/*NAVBAR*/
+.div-nav{
+    display: flex;
+}
+
+#home{
+    width:15rem;
+    height:15rem;
+    margin: 2rem;
+}
+
+.navbar {
+	margin-left: 10% !important;
+    background-color: rgb(246, 165, 59) !important;
+    border-radius: 10rem !important;
+    margin-top: 5rem;
+	
+}
+
+.navbar-nav{
+	
+	justify-content: space-around;
+	width: 100%;
+}
+
+#cerrarSesion{
+    margin-left: -0.2rem;
+}
+
+.navbar-nav>li>a {
+    color: white !important;
+    margin-top: 1px !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 1.9rem;
+    text-shadow: 0.1em 0.1em 0.1em rgb(157, 87, 0);
+	transition: .5s
+}
+
+.navbar-nav>li>a:hover {
+    font-size: 2.1rem;
+    text-shadow: 0.1em 0.1em 0.1em rgb(54, 30, 0);
+	background-color: rgba(0,0,0,0.00) !important;
+}
+
+.navbar-nav>li>a:focus {
+    font-size: 2.1rem;
+    text-shadow: 0.1em 0.1em 0.1em rgb(54, 30, 0);
+	background-color: rgba(0,0,0,0.00) !important;
+}
+
+.dropdown-menu>li>a {
+	
+	font-family: 'Oswald', sans-serif !important;
+	transition: 0.3s
+	
+}
+
+.dropdown-menu>li>a:hover {
+
+	background-color: #f5f5f5 !important
+	
+}
+
+.btn-group{
+    margin-top: -10px !important;
+    margin-left: 3rem;
+}
+
+/*CONTENIDO*/
+body{
+    height:100%;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    color: aliceblue !important;
+}
+
+form{
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0.1em 0.1em 0.1em rgb(73, 73, 73);
+    text-align: center;
+    margin-top: -10rem;
+}
+
+legend{
+    color: rgb(246, 165, 59) !important;
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.boton {
+	
+	text-align: center;
+	
+}
+
+.boton input{
+	
+    background: rgb(245, 191, 103);
+    border: 1px solid #753b00;
+    border-radius: 5px 5px 5px 5px;
+    color: #ce5d00;
+    font-size: 2rem;
+    padding: 5px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 3rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	transition: 0.3s
+		
+}
+
+.boton #aceptar {
+	
+	color: white;
+	background-color: #198754;
+	border: 1px solid rgba(0,0,0,0.00);
+	transition: 0.3s
+	
+}
+
+.boton #denegar {
+	
+	color: white;
+	background-color: #dc3545;
+	border: 1px solid rgba(0,0,0,0.00);
+	transition: 0.3s
+		
+}
+
+.boton #pendiente {
+	
+	border: 1px solid rgba(0,0,0,0.00);
+	transition: 0.3s;
+	
+}
+
+.boton input:hover, .boton #aceptar:hover, .boton #denegar:hover, .boton #pendiente:hover {
+	
+	color: white;
+	border: 1px solid white;
+	cursor: pointer
+	
+}
+
+#listados table {
+	
+	font-family: 'Raleway', sans-serif;
+	border: 1px solid rgba(255,255,255,1.00);
+	background-color: rgba(80, 80, 80, 0.5);
+	transition: 0.3s
+	
+}
+
+#listados table td {
+	
+	border-top: 1px solid rgba(255,255,255,1.00);
+	
+}
+
+#listados table th {
+	
+	text-align: center;
+	
+}
+
+#listados table td, #listados table th {
+	
+	border-left: 1px solid rgba(255,255,255,1.00);
+	padding: 0.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	
+}
+
+#listados table tbody tr:nth-child(2n+1) {
+	
+	background-color: rgba(100,100,100,0.5);
+	
+}
+
+#listados table tbody tr:hover {
+	
+	background-color: rgba(120,120,120,0.5);
+	
+}
+
+#tablaListaCitas tbody tr {
+	
+	cursor: pointer;
+	
+}
+
+.filaSeleccionada {
+	
+	background-color: rgba(130,130,130,0.8) !important;
+	
+}
+
+/*Footer*/
+.footer{
+    background-color: rgb(80, 80, 80);
+    width: auto;
+    margin-top: 10rem;
+    bottom: 0;
+    opacity: 0.9;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+footer div{
+    display: inline-block;
+    margin: 4rem;
+}
+
+footer div a{
+    text-decoration: none;
+    color: rgb(255, 123, 0);
+	transition: .3s
+}
+
+footer div a:hover {
+	text-decoration: underline;
+    color: rgba(251,249,0,1.00);
+}
+
+@media (min-width:540px) and (max-width:1024px){
+    .navbar-default{
+        height: 16rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 3rem;
+    }
+
+   
+    #cerrarSesion{
+        margin-left: 8rem;
+    }
+
+    form{
+        margin-top: -2rem;
+        font-size: 2rem;
+    }
+}
+
+
